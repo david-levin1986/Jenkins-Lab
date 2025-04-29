@@ -1,7 +1,7 @@
 pipeline {
     agent any
   parameters {
-    string(name: 'CLASS', defaultValue: 'Jenkins', description: 'Enter your class name')
+    string(name: 'USER', defaultValue: 'Jenkins', description: 'Enter your class name')
   }
 
 
@@ -14,7 +14,7 @@ pipeline {
                   sh '''
                     chmod +x hello.sh
                     ./hello.sh
-                    echo Hello, ${params.CLASS}
+                    echo Hello, ${USER}
                 '''       
             }
         }
