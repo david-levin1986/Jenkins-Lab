@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Chek git') {
             steps {
-                echo 'Hello From Jenkins'
+                git 'https://github.com/david-levin1986/Jenkins-Lab.git'
             }
         }
         stage('Building') {
@@ -12,12 +12,17 @@ pipeline {
                 sh '''
 
                      chmod +x hello.sh
-                     ./hello.sh
+                     
 
 
 
                     '''
                  
+            }
+        }
+        stage('test') {
+            steps {
+               sh './hello.sh'
             }
         }
     }
