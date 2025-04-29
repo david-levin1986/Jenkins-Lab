@@ -2,19 +2,13 @@ pipeline {
     agent any
 
     stages {
-        stage('Chek git') {
-            steps {
-                git 'https://github.com/david-levin1986/Jenkins-Lab.git'
-            }
-        }
+
         stage('Building') {
             steps {
                 sh '''
 
                      chmod +x hello.sh
                      
-
-
 
                     '''
                  
