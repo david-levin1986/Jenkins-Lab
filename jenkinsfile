@@ -10,7 +10,7 @@ pipeline {
         stage('Building') {
             steps {
                 sh '''
-                    #sudo rm -rf hello.sh
+                    sudo rm -rf hello.sh
                      echo echo "Hellow Wold" >> hello.sh
                      chmod +x hello.sh
                      ./hello.sh
