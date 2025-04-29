@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh '''
                     #sudo rm -rf hello.sh
-                    sudo echo echo "Hellow Wold" >> hello.sh
+                     echo echo "Hellow Wold" >> hello.sh
                     sudo chmod +x hello.sh
                     sudo ./hello.sh
 
