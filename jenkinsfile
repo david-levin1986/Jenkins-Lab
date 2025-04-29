@@ -15,7 +15,7 @@ pipeline {
                   sh '''
                     chmod +x hello.sh
                     ./hello.sh
-                    echo Wellcom to, ${CLASS}
+                    echo Wellcom to, ${CLASS} Class
                 '''       
             }
         }
