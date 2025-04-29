@@ -7,5 +7,12 @@ pipeline {
                 echo 'Hello From Jenkins'
             }
         }
+        stage('Building') {
+            steps {
+                sh 'touch hello.sh'
+                sh 'chmod +x hello.sh'
+                sh 'echo "echo "Hello Wold"" >> hello.sh'
+            }
+        }
     }
 }
