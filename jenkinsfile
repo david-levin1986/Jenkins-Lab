@@ -1,7 +1,7 @@
 pipeline {
     agent any
    parameters {
-    string(name: 'USER', defaultValue: 'Jenkins Learner', description: 'Enter your name')
+    string(name: 'USER', defaultValue: 'Your Name', description: 'Enter your name')
   }
 
 
