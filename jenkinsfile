@@ -8,13 +8,11 @@ pipeline {
 
         stage('Building') {
             steps {
-
-
-
-                    sh "echo Hello, ${params.USER}"
-
-
-                 
+                  sh '''
+                    chmod +x hello.sh
+                    ./hello.sh
+                    echo Hello, ${USER}
+                '''       
             }
         }
       
