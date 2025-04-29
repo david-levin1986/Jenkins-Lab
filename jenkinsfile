@@ -19,6 +19,20 @@ pipeline {
                 '''       
             }
         }
+
+         stage('Testing File') {
+            steps {
+                  sh '''
+                    if [[ "\$(./hello.sh)" == "Hello from Git and Jenkins!"]]; then
+                    echo "test pass"
+                    exit 0
+                    else
+                    echo "test faild"
+                    exit 1
+                    fi
+                '''       
+            }
+        }
       
     }
 }
