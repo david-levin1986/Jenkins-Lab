@@ -1,7 +1,7 @@
 pipeline {
     agent any
       parameters {
-    string(name: 'USER', description: 'Enter your name')
+    string(name: 'Class', description: 'Enter the Clss name')
   }
 
     stages {
@@ -11,7 +11,7 @@ pipeline {
                   sh '''
                     chmod +x hello.sh
                     ./hello.sh
-                    echo Hello, ${USER}
+                    echo Wellcom to Clas, ${USER}
                 '''       
             }
         }
