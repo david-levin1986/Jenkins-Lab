@@ -12,6 +12,7 @@ pipeline {
                 sh 'touch hello.sh'
                 sh 'chmod +x hello.sh'
                 sh 'echo "echo "Hello Wold"" >> hello.sh'
+                sh 'cat hello.sh'
             }
         }
     }
