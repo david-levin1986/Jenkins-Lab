@@ -23,7 +23,7 @@ pipeline {
          stage('Testing File') {
             steps {
                   sh '''
-                    if [[ "$(./hello.sh)" == "David Levin" ]]; then
+                    if [ "$(./hello.sh)" == "David Levin" ]; then
                     echo "test pass"
                     exit 0
                     else
