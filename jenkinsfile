@@ -9,11 +9,15 @@ pipeline {
         }
         stage('Building') {
             steps {
-                sh 'rm -rf hello.sh'
-                sh 'touch hello.sh'
-                sh 'chmod +x hello.sh'
-                sh 'echo echo "Hello Wold" >> hello.sh'
-                sh 'cat hello.sh'
+                sh '''
+                    rm -rf hello.sh
+                    echo echo "Hellow Wold" >> hello.sh
+                    ./hello.sh
+
+
+
+                    '''
+                 
             }
         }
     }
