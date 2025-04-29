@@ -1,7 +1,7 @@
 pipeline {
     agent any
         parameters {
-    string(name: 'CLLAS', defaultValue: 'Jenkins', description: 'Enter Class Name')
+    string(name: 'CLASS', defaultValue: 'Jenkins', description: 'Enter Class Name')
   }
 
 
