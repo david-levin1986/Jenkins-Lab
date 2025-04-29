@@ -12,7 +12,7 @@ pipeline {
 
                      chmod +x hello.sh
                      ./hello.sh
-                     "echo Hello, ${params.USER}"
+                     echo Hello, ${params.USER}
 
                     '''
                  
