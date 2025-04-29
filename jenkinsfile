@@ -1,8 +1,10 @@
 pipeline {
     agent any
-      parameters {
-    string(name: 'Class', description: 'Enter the Clss name')
+        parameters {
+    string(name: 'CLLAS', defaultValue: 'Jenkins', description: 'Enter Class Name')
   }
+
+
 
     stages {
 
@@ -11,7 +13,7 @@ pipeline {
                   sh '''
                     chmod +x hello.sh
                     ./hello.sh
-                    echo Wellcom to Clas, ${USER}
+                    echo Wellcom to , ${CLASS} clas
                 '''       
             }
         }
