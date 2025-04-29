@@ -22,15 +22,15 @@ pipeline {
 
          stage('Testing File') {
             steps {
-                  sh '''
-                    if [ "$(./hello.sh)" == "David Levin" ]; then
-                    echo "test pass"
-                    exit 0
-                    else
-                    echo "test faild"
-                    exit 1
-                    fi
-                '''       
+            sh '''
+                if [ "$(./hello.sh)" = "David Levin" ]; then
+                echo "Test passed"
+                exit 0
+            else
+                echo "Test failed"
+                exit 1
+            fi
+    '''      
             }
         }
       
