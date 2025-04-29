@@ -1,7 +1,7 @@
 pipeline {
     agent any
-     parameters {
-    string(name: 'USER', defaultValue: '', description: 'Enter your name')
+      parameters {
+    string(name: 'USER', description: 'Enter your name')
   }
 
     stages {
